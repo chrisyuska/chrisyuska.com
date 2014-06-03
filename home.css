@@ -2,6 +2,9 @@ html {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 2em;
+}
+
+html, a {
   color: #333;
 }
 
@@ -12,14 +15,30 @@ html {
 .hero h1, .hero p {
   margin: 0;
 }
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar li {
+  display: block;
+  margin: 10px;
+}
+
 .navbar a {
   border-bottom: 1px solid #E0E0E0;
-  margin: 0 10px;
   text-decoration: none;
-  color: #333;
 }
 
 .navbar a:hover, .navbar a:active {
   border-bottom: 1px solid #AAA;
   color: #000;
+}
+
+@media (min-width: 568px) {
+  .navbar li {
+    display: inline;
+  }
 }
