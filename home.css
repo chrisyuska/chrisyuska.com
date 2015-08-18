@@ -37,8 +37,51 @@ html, a {
   color: #000;
 }
 
+.kicklet-link {
+  display: inline-block;
+  color: #0E494E;
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 64px;
+  border-bottom: 1px solid #E0E0E0;
+  margin: 60px auto 0;
+}
+
+.kicklet-link h2 {
+  font-size: 64px;
+  font-weight: normal;
+  margin: 4px auto;
+  line-height: 0.4em;
+}
+
+.kicklet-link:hover, .kicklet-link:active {
+  border-bottom: 1px solid #AAA;
+}
+
+.kicklet-link small {
+  font-size: 0.378em;
+}
+
+@media (max-width: 359px) {
+  .hero, .navbar, .kicklet-link h2 {
+    font-size: 0.8em;
+  }
+
+  .hero {
+    margin: 40px 0;
+  }
+
+  .kicklet-link {
+    margin: 40px auto 0;
+  }
+}
+
 @media (min-width: 568px) {
   .navbar li {
     display: inline;
+  }
+
+  .kicklet-link {
+    margin: 80px auto 0;
   }
 }
