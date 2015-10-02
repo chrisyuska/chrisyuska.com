@@ -30,8 +30,16 @@ html, a {
 
 .navbar li {
   display: inline;
-  margin: 5px;
+  margin: 4px;
   font-size: 0.6rem;
+}
+
+.navbar li:first-child {
+  margin-left: 0;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
 }
 
 .navbar a {
