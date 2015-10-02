@@ -9,11 +9,17 @@ html, a {
 }
 
 .hero {
-  margin: 50px 0;
+  font-size: 0.8rem;
+  margin: 40px 0 0;
 }
 
 .hero h1, .hero p {
   margin: 0;
+}
+
+.hero p {
+  color: #777;
+  font-size: 0.6rem;
 }
 
 .navbar {
@@ -23,8 +29,9 @@ html, a {
 }
 
 .navbar li {
-  display: block;
-  margin: 10px;
+  display: inline;
+  margin: 5px;
+  font-size: 0.6rem;
 }
 
 .navbar a {
@@ -37,51 +44,88 @@ html, a {
   color: #000;
 }
 
-.kicklet-link {
+.kicklet-link, .columbus-meetup-link {
   display: inline-block;
   color: #0E494E;
   text-decoration: none;
   border-bottom: none;
-  font-size: 64px;
+  font-size: 2rem;
   border-bottom: 1px solid #E0E0E0;
-  margin: 60px auto 0;
+  margin: 40px auto 0;
 }
 
-.kicklet-link h2 {
-  font-size: 64px;
+.kicklet-link h2, .columbus-meetup-link h2 {
+  font-size: 1.6rem;
   font-weight: normal;
   margin: 4px auto;
   line-height: 0.4em;
 }
 
-.kicklet-link:hover, .kicklet-link:active {
+.kicklet-link:hover, .kicklet-link:active, .columbus-meetup-link:hover, .columbus-meetup-link:active {
   border-bottom: 1px solid #AAA;
 }
 
-.kicklet-link small {
+.kicklet-link small, .columbus-meetup-link small {
   font-size: 0.378em;
 }
 
-@media (max-width: 359px) {
-  .hero, .navbar, .kicklet-link h2 {
-    font-size: 0.8em;
+.columbus-meetup-link {
+  color: #F25555;
+  margin: 40px auto 20px;
+}
+
+.columbus-meetup-link h2 {
+  font-size: 0.977rem;
+}
+
+@media (min-width: 360px) {
+  .kicklet-link h2 {
+    font-size: 2rem;
+  }
+
+  .hero, .navbar {
+    font-size: 1rem;
   }
 
   .hero {
-    margin: 40px 0;
+    margin: 50px 0 20px;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .navbar li {
+    margin: 10px;
+    font-size: 0.77rem;
   }
 
   .kicklet-link {
-    margin: 40px auto 0;
+    margin: 60px auto 0;
+  }
+
+  .columbus-meetup-link h2 {
+    font-size: 1.21rem
+  }
+
+  .columbus-meetup-link {
+    margin: 60px auto 20px;
   }
 }
 
 @media (min-width: 568px) {
   .navbar li {
-    display: inline;
+    font-size: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 
   .kicklet-link {
     margin: 80px auto 0;
+  }
+  .columbus-meetup-link {
+    margin: 80px auto 40px;
   }
 }
